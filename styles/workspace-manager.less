@@ -1,0 +1,29 @@
+@import "variables";
+@import "ui-variables";
+
+.workspace-manager-status
+{
+    display: flex;
+    align-items: center;
+
+    .workspace-manager-status-icon
+    {
+        width: 18px;
+        height: 10px;
+        margin-right: 8px;
+        display: block;
+
+        rect
+        {
+            fill: @text-color-subtle;
+        }
+    }
+
+    &:hover, &:active
+    {
+        rect
+        {
+            fill: @text-color;
+        }
+    }
+}

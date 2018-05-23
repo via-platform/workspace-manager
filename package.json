@@ -1,0 +1,43 @@
+{
+  "name": "workspace-manager",
+  "version": "0.0.0",
+  "description": "Save and restore your favorite workspaces.",
+  "main": "./lib/main",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "via",
+    "workspace",
+    "manager"
+  ],
+  "repository": "https://github.com/via-platform/workspace-manager",
+  "author": "Dakota Gordon",
+  "engines": {
+    "via": ">=0.8.0-alpha"
+  },
+  "dependencies": {
+        "etch": "^0.12.7"
+  },
+  "providedServices": {},
+  "configSchema": {
+    "showStatusBarIcon": {
+      "title": "Show In Status Bar",
+      "description": "Show an indicator in the status bar to switch interfaces.",
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "consumedServices": {
+    "action-bar": {
+      "versions": {
+        "^0.1.0": "consumeActionBar"
+      }
+    },
+    "status-bar": {
+      "versions": {
+        "^0.1.0": "consumeStatusBar"
+      }
+    }
+  }
+}

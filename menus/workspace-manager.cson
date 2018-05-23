@@ -1,0 +1,10 @@
+'menu': [
+  {
+    'label': 'Workspace'
+    'submenu': [
+        { 'label': 'Save Workspace', 'command': 'workspace-manager:save-workspace' }
+        { 'label': 'Load Workspace', 'command': 'workspace-manager:load-workspace' }
+        { 'label': 'Recent Workspaces', 'submenu': [] }
+    ]
+  }
+]
