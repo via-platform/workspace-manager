@@ -2,9 +2,8 @@
   {
     'label': 'Workspace'
     'submenu': [
+        { 'label': 'Switch Workspace', 'command': 'workspace-manager:switch-workspace' }
         { 'label': 'Save Workspace', 'command': 'workspace-manager:save-workspace' }
-        { 'label': 'Load Workspace', 'command': 'workspace-manager:load-workspace' }
-        { 'label': 'Recent Workspaces', 'submenu': [] }
     ]
   }
 ]
